@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Two Inner Sections</title>
+  <style>
+
+
+
+
+
+
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+  }
+
+  .outer-container {
+    display: flex;
+
+    max-width: 80%;
+  margin: 0 auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;  
+
+  }
+
+  .inner-section {
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+    /* background-color: orange; */
+  }
+
+  .inner-section1 {
+    width: 30%;
+    background-color: #f0f0f0;
+  }
+
+  .inner-section2 {
+    width: 70%;
+    /* background-color: #e0e0e0; */
+  }
+
+  .card {
+    /* background-color: #ff0000; */
+    /* border: 1px solid #cccccc; */
+    /* border-radius: 4px; */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom:  1px solid rgba(0, 0, 0, 0.137);
+    width: 80%;
+    margin: 0 auto;
+  
+  }
+
+  .card li {
+    list-style: none;
+  }
+
+  .card ul {
+    padding-left: 5px;
+  }
+
+  .card h2{
+    /* text-align: center; */
+  }
+
+
+  .card1{
+    text-align: center;
+  }
+
+  .accordion {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-bottom: 22px;
+    /* background-color: red; */
+    padding: 10px;
+    min-height: 50px;
+  }
+
+
+  .accordion-header {
+    /* background-color: #f7f7f7; */
+    padding: 10px;
+    cursor: pointer;
+
+  
+  }
+
+  .accordion-content {
+    padding: 10px;
+    display: none;
+    min-height: 200px;
+  }
+
+  .accordion.active .accordion-content {
+    display: block;
+  }
+  /* ... (Previous styles are here) ... */
+
+  .payment-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+
+
+
+  .div{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+
+  /* bank drop down */
+
+
+  .bank-dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .bank-dropdown select {
+    padding: 8px 32px 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .bank-dropdown .pay-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+    /* ... (Previous styles are here) ... */
+
+    .payment-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .bank-dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+
+    .bank-dropdown select {
+      padding: 8px 32px 8px 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width:40vw;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .bank-dropdown .pay-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .upi-section {
+      margin-top: 20px;
+    }
+
+    .upi-section input[type="text"] {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 40%;
+      font-size: 16px;
+    }
+
+    .qr-code-section {
+      text-align: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      flex: 1;
+    }
+
+    .qr-code-section img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+
+    .accordion-container {
+      display: flex;
+    }
+
+    .accordion-content {
+      flex: 1;
+    }
+
+
+
+    .account-table {
+      margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .account-table th, .account-table td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+
+
+
+
+
+
+    /* inner section 2 */
+
+    .div-above-innersection2 {
+        display: flex;
+        justify-content: space-between;
+        background-color: orange;
+        color: white;
+        padding: 0 20px;
+    }
+
+
+
+    .acc-div {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+
+    #expiryDate{
+        margin-left: 21px;
+    }
+
+
+
+    .bottom-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px 0 0;
+    }
+
+
+
+
+
+    
+  #pay-btn{
+
+padding: 8px 16px;
+background-color: #007bff;
+color: #ffffff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+
+
+
+
+
+    .outer-sectionx2 {
+      display: flex;
+      /* height: 100vh;  */
+    }
+    .inner-sectionx2 {
+      flex: 1;
+      padding: 10px;
+      box-sizing: border-box;
+      /* border: 1px solid #000; */
+      background-color: whitesmoke;
+    }
+
+
+    .inner-sectionx2 p{
+      padding-left: 20px;
+     
+    
+    }
+
+
+
+    .inner-sectionx2-a{
+        display: flex;
+    }
+
+
+    .inner-sectionx2-a  img {
+      padding-top: 16px;
+    }
+
+    .upi-div{
+        display: flex;
+        justify-content: space-between;
+      
+      
+    }
+
+
+
+    .bottom-in-sec2-div{
+      margin: 0;
+      padding: 0;
+      line-height: 18px;
+      padding-left: 10px;
+    }
+
+
+
+    .save-card{
+      margin-top: 25px;
+    }
+
+
+
+
+    
+
+
+
+  </style>
+
+
+<script src="https://kit.fontawesome.com/d1fe59ecaa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="outer-container">
+    <div class="inner-section inner-section1">
+      <!-- <div class="card">Card 1</div> -->
+      <div class="card card1">
+        <i class="fas fa-user" style="font-size: 48px;"></i>
+        <p>21 Days Plan</p>
+        <p>Unlimited candidate responses for a job post</p>
+        <p>Valid for 21 days</p>
+        <a href="#">Change plan</a>
+      </div>
+
+
+      <div class="card">
+        <h2>Key Benefits</h2>
+        <ul>
+          <li>Unlimited candidate responses</li>
+          <li>300 candidate unlocks</li>
+          <li>1 job live at a time</li>
+          <li>Valid for 21 days</li>
+        </ul>
+      </div>
+
+
+
+<div class="card">
+    <h2>Price Breakup</h2>
+   <!-- <p><label for="">21 Days Plan</label>  <label for="">₹1999</label></p>
+   <p><label for="">GST</label>  <label for="">(18.0%)</label></p>
+   <p><label for="">Round Off</label>  <label for="">- ₹0.82</label></p>
+   <p><label for="">Grand Total</label>  <label for="">₹2358</label></p> -->
+
+
+   <div class="div">
+
+    <div>
+        <p>21 Days Plan</p>
+        <p>GST</p>
+        <p>Round off </p>
+        <p>Grand Total</p>
+    </div>
+
+
+    <div>
+       <p>₹1999</p>
+       <p>(18.0%)</p>
+       <p>- ₹0.82</p>
+        <p>₹2358</p>
+    </div>
+
+
+
+   </div>
+  
+
+
+</div>
+
+
+
+
+    </div>
+    <div class="inner-section inner-section2">
+
+
+
+        <div class="div-above-innersection2">
+            <div>
+                <p>How would you like to pay for your 21 Days Plan?</p>
+            </div>
+
+
+            <div>
+                <p>Inclusive of gst</p>
+            </div>
+
+
+        </div>
+
+
+      <div class="accordion "  id="accordion1">
+        <label class="accordion-header" onclick="toggleAccordion(1)">
+          <div>Debit/Credit-Card</div>
+          
+        </label>
+        <div class="accordion-content" id="accordion-content-1" style="display:block;">
+          <div class="cardd">
+
+
+            <div class="acc-div">
+
+            <div>
+            <label for="nameOnCard">Name on Card:</label>
+            <input type="text" id="nameOnCard" placeholder="John Doe">
+            </div>
+
+        <div>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+        </div>
+
+    </div>
+
+
+
+    
+
+    <div class="acc-div">
+
+        <div>
+            <span for="expiryDate">Expiry Date: </span>
+            <input type="text" id="expiryDate" placeholder="MM/YY">
+        </div>
+
+
+        <div>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="123">
+        </div>
+
+        </div>
+
+
+
+
+          </div>
+
+
+          <div class="save-card">
+            <label for="saveCardDetails">
+              <input type="radio" name="saveCardDetails" id="saveCardDetails">
+              <label for="">Save Card Details</label>
+            </label>
+          </div>
+        
+
+
+          <div class="bottom-div">
+
+
+            <div>
+               <span><img src="./card-schemes.webp" height="48px" alt=""></span>       
+            </div>
+
+
+            <div>
+                <button class="payment-btn">Payy</button>
+            </div>
+     
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="accordion">
+        <label class="accordion-header" onclick="toggleAccordion(2)">
+            
+          <div>NetBanking</div>
+        </label>
+        <div class="accordion-content" id="accordion-content-2" style="display: none;">
+
+
+            <p>Popular Banks</p>
+            <img src="./card-schemes.webp" height="50px"> 
+            <br>
+
+          <div class="bank-dropdown">
+            <select>
+              <option value="" disabled selected>Choose a Bank</option>
+              <option value="bank1">Bank 1</option>
+              <option value="bank2">Bank 2</option>
+              <option value="bank3">Bank 3</option>
+              <option value="bank4">Bank 4</option>
+              <option value="bank5">Bank 5</option>
+            </select>
+          
+          </div>
+
+          <button id="pay-btn">Pay</button>
+        </div>
+      </div>
+      <div class="accordion">
+        <label class="accordion-header" onclick="toggleAccordion(3)">
+            <div class="upi-div">
+
+                <div> UPI</div>
+                <div>       <img src="./card-schemes.webp"  height="20px" alt=""></div>
+            </div>
+   
+        </label>
+        <div class="accordion-content" id="accordion-content-3" style="display: none;">
+          <div class="upi-section">
+            <label for="upiId">Enter UPI ID:</label>
+            <input type="text" id="upiId" placeholder="example@upi">
+
+            <p for="saveUPIId">
+              <input type="radio" name="saveUPIId" id="saveUPIId">   Save this UPI ID
+            </p>
+          </div>
+          <button class="payment-btn">Pay</button>
+        </div>
+      </div>
+      <div class="accordion">
+        <label class="accordion-header" onclick="toggleAccordion(4)">
+         <div>Wallets</div> 
+        </label>
+        <div class="accordion-content" id="accordion-content-4" style="display: none;">
+          <h2>Pay with your favorite method</h2>
+          <div>
+            <img src="./Paytm_logo.png" height="25px" alt="Image 1">
+
+            <img src="./Paytm_logo.png" height="25px" alt="Image 2">
+          </div>
+          <div class="bank-dropdown">
+            <select>
+              <option value="" disabled selected>Choose a Payment Method</option>
+              <option value="method1">Payment Method 1</option>
+              <option value="method2">Payment Method 2</option>
+              <option value="method3">Payment Method 3</option>
+              <option value="method4">Payment Method 4</option>
+              <option value="method5">Payment Method 5</option>
+            </select>
+         
+          </div>
+          <button class="pay-btn">Pay</button>
+        </div>
+      </div>
+
+
+
+      <div class="accordion">
+        <label class="accordion-header" onclick="toggleAccordion(5)">
+         <div>NEFT/IMPS/RTGS - 100% Secure Direct transfer to our bank account. </div> 
+        </label>
+        <div class="accordion-content" id="accordion-content-5" style="display: none;">
+          <h2>Account Details</h2>
+          <p>If you are not sure about Online Payment method, kindly transfer to our bank account and provide proof of payment (UTR no.).</p>
+          <table class="account-table">
+            <tr>
+              <th>Account Number:</th>
+              <td>1235998</td>
+            </tr>
+
+
+              <tr>
+                <th>IFSC/RTGS</th>
+                <td>ICIC0001243</td>
+              </tr>
+
+
+
+
+              <tr>
+                <th>Account Name</th>
+                <td>Eloquent Info</td>
+              </tr>
+
+
+
+              <tr>
+                <th>Bank Name</th>
+                <td>HDFC BANK</td>
+              </tr>
+
+              <tr>
+                <th>Bank Branch</th>
+                <td>Curry Road</td>
+              </tr>
+
+          </table>
+
+
+        </div>
+      </div>
+   
+    <div class="outer-sectionx2">
+        <div class="inner-sectionx2  inner-sectionx2-a">
+            <div><img src="./refund_banner_icon.svg" alt=""></div>
+            <div class="bottom-in-sec2-div"><p>100% Money Back Guarantee <br> Get instant refund if you are not satisfied with WorkIndia's services.   <a href="">Read more</a></p></div>
+            
+        </div>
+        <div class="inner-sectionx2">
+            <p> <i class="fa-solid fa-shield-halved" style="color: green;"></i> <strong>100% Secure Payments</strong> </p>
+           <div> <img src="./card-schemes.webp" height="40px"  width="100%"></div>
+        </div>
+      </div>  
+    </div>
+
+  </div>
+
+
+
+
+
+  <script>
+    function toggleAccordion(accordionNum) {
+      var content = document.getElementById('accordion-content-' + accordionNum);
+      content.style.display = content.style.display === 'none' ? 'block' : 'none';
+
+      // Collapse other accordions
+      var accordions = document.getElementsByClassName('accordion-content');
+      for (var i = 0; i < accordions.length; i++) {
+        if (accordions[i].id !== 'accordion-content-' + accordionNum) {
+          accordions[i].style.display = 'none';
+        }
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Outer Section with Two Equal Inner Sections</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .outer-section2 {
+      display: flex;
+      height: 100vh;
+    }
+    .inner-section2 {
+      flex: 1;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer-section2">
+    <div class="inner-section2">Inner Section 1</div>
+    <div class="inner-section2">Inner Section 2</div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+ -->
+
+
+
+
+

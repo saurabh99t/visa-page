@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .outer-container {
+    display: flex;
+  }
+
+  .inner-section {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .inner-section1 {
+    width: 30%;
+    background-color: #f0f0f0;
+  }
+
+  .inner-section2 {
+    width: 70%;
+    background-color: #e0e0e0;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .accordion {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+   
+  }
+
+  .accordion-header {
+    /* background-color: #f7f7f7; */
+ 
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .accordion-content {
+    padding: 10px;
+    display: none;
+  }
+
+  .accordion.active .accordion-content {
+    display: block;
+  }
+  /* ... (Previous styles are here) ... */
+
+  .payment-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+  /* bank drop down */
+
+
+  .bank-dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .bank-dropdown select {
+    padding: 8px 32px 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .bank-dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
