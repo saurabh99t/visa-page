@@ -1,401 +1,13 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Two Inner Sections</title>
-  <style>
-
-
-
-
-
-
-    
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    padding: 20px;
-  }
-
-  .outer-container {
-    display: flex;
-
-    max-width: 80%;
-  margin: 0 auto;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;  
-
-  }
-
-  .inner-section {
-    padding: 0 0 0 20px;
-    box-sizing: border-box;
-    /* background-color: orange; */
-  }
-
-  .inner-section1 {
-    width: 30%;
-    background-color: #f0f0f0;
-  }
-
-  .inner-section2 {
-    width: 70%;
-    /* background-color: #e0e0e0; */
-  }
-
-  .card {
-    /* background-color: #ff0000; */
-    /* border: 1px solid #cccccc; */
-    /* border-radius: 4px; */
-    padding: 10px;
-    margin-bottom: 10px;
-    border-bottom:  1px solid rgba(0, 0, 0, 0.137);
-    width: 80%;
-    margin: 0 auto;
-  
-  }
-
-  .card li {
-    list-style: none;
-  }
-
-  .card ul {
-    padding-left: 5px;
-  }
-
-  .card h2{
-    /* text-align: center; */
-  }
-
-
-  .card1{
-    text-align: center;
-  }
-
-  .accordion {
-    border: 1px solid #dddddd;
-    border-radius: 4px;
-    margin-bottom: 22px;
-    /* background-color: red; */
-    padding: 10px;
-    min-height: 50px;
-  }
-
-
-  .accordion-header {
-    /* background-color: #f7f7f7; */
-    padding: 10px;
-    cursor: pointer;
-
-  
-  }
-
-  .accordion-content {
-    padding: 10px;
-    display: none;
-    min-height: 200px;
-  }
-
-  .accordion.active .accordion-content {
-    display: block;
-  }
-  /* ... (Previous styles are here) ... */
-
-  .payment-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-
-
-
-
-  .div{
-    display: flex;
-    justify-content: space-between;
-  }
-
-
-
-
-  /* bank drop down */
-
-
-  .bank-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .bank-dropdown select {
-    padding: 8px 32px 8px 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 200px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .bank-dropdown .pay-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-    /* ... (Previous styles are here) ... */
-
-    .payment-btn {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #ffffff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .bank-dropdown {
-      display: inline-block;
-      position: relative;
-    }
-
-
-    .bank-dropdown select {
-      padding: 8px 32px 8px 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      width:40vw;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .bank-dropdown .pay-btn {
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 8px 16px;
-      background-color: #007bff;
-      color: #ffffff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .upi-section {
-      margin-top: 20px;
-    }
-
-    .upi-section input[type="text"] {
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      width: 40%;
-      font-size: 16px;
-    }
-
-    .qr-code-section {
-      text-align: center;
-      padding: 20px;
-      background-color: #f0f0f0;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      flex: 1;
-    }
-
-    .qr-code-section img {
-      max-width: 200px;
-      max-height: 200px;
-    }
-
-    .accordion-container {
-      display: flex;
-    }
-
-    .accordion-content {
-      flex: 1;
-    }
-
-
-
-    .account-table {
-      margin-top: 20px;
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .account-table th, .account-table td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-    }
-
-
-
-
-
-
-
-    /* inner section 2 */
-
-    .div-above-innersection2 {
-        display: flex;
-        justify-content: space-between;
-        background-color: orange;
-        color: white;
-        padding: 0 20px;
-    }
-
-
-
-    .acc-div {
-        display: flex;
-        justify-content: space-between;
-        padding: 5px;
-    }
-
-
-    #expiryDate{
-        margin-left: 21px;
-    }
-
-
-
-    .bottom-div{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 20px 0 0;
-    }
-
-
-
-
-
-    
-  #pay-btn{
-
-padding: 8px 16px;
-background-color: #007bff;
-color: #ffffff;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-}
-
-
-
-
-
-
-    .outer-sectionx2 {
-      display: flex;
-      /* height: 100vh;  */
-    }
-    .inner-sectionx2 {
-      flex: 1;
-      padding: 10px;
-      box-sizing: border-box;
-      /* border: 1px solid #000; */
-      background-color: whitesmoke;
-    }
-
-
-    .inner-sectionx2 p{
-      padding-left: 20px;
-     
-    
-    }
-
-
-
-    .inner-sectionx2-a{
-        display: flex;
-    }
-
-
-    .inner-sectionx2-a  img {
-      padding-top: 16px;
-    }
-
-    .upi-div{
-        display: flex;
-        justify-content: space-between;
-      
-      
-    }
-
-
-
-    .bottom-in-sec2-div{
-      margin: 0;
-      padding: 0;
-      line-height: 18px;
-      padding-left: 10px;
-    }
-
-
-
-    .save-card{
-      margin-top: 25px;
-    }
-
-
-
-
-    
-
-
-
-
-    @media screen and (max-width: 768px) {
-      body{
-        padding: 0;
-      }
-      .outer-container {
-        flex-direction: column;
-        max-width: 100%;
-      }
-
-      .inner-section1 {
-        width: 100%;
-      }
-
-      .card {
-        width: 100%;
-      }
-
-    
-
-      .inner-sectionx2 {
-        padding: 10px;
-      }
-
-
-      .inner-section2 {
-        width: 100%;
-      }
-
-      .inner-section{
-        padding: 0;
-      }
-    }
-
-  </style>
-
+ <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
 
 <script src="https://kit.fontawesome.com/d1fe59ecaa.js" crossorigin="anonymous"></script>
 </head>
@@ -405,10 +17,10 @@ cursor: pointer;
       <!-- <div class="card">Card 1</div> -->
       <div class="card card1">
         <i class="fas fa-user" style="font-size: 48px;"></i>
-        <p>21 Days Plan</p>
-        <p>Unlimited candidate responses for a job post</p>
-        <p>Valid for 21 days</p>
-        <a href="#">Change plan</a>
+        <p id="card1-p1">21 DAYS PLAN</p>
+        <p id="card1-p2">Unlimited candidate responses for a job post</p>
+        <p id="card1-p3">Valid for 21 days</p>
+        <a id="card1-a1" href="#">Change plan</a>
       </div>
 
 
@@ -481,7 +93,7 @@ cursor: pointer;
 
       <div class="accordion "  id="accordion1">
         <label class="accordion-header" onclick="toggleAccordion(1)">
-          <div>Debit/Credit-Card</div>
+          <div> <strong>Debit/Credit-Card</strong></div>
           
         </label>
         <div class="accordion-content" id="accordion-content-1" style="display:block;">
@@ -540,7 +152,7 @@ cursor: pointer;
 
 
             <div>
-               <span><img src="./card-schemes.webp" height="48px" alt=""></span>       
+               <span><img src="./card-schemes.webp" alt=""></span>       
             </div>
 
 
@@ -557,13 +169,13 @@ cursor: pointer;
       <div class="accordion">
         <label class="accordion-header" onclick="toggleAccordion(2)">
             
-          <div>NetBanking</div>
+          <div><strong>NetBanking</strong></div>
         </label>
         <div class="accordion-content" id="accordion-content-2" style="display: none;">
 
 
-            <p>Popular Banks</p>
-            <img src="./card-schemes.webp" height="50px"> 
+            <p> Popular Banks</p>
+            <img src="./card-schemes.webp" > 
             <br>
 
           <div class="bank-dropdown">
@@ -585,7 +197,7 @@ cursor: pointer;
         <label class="accordion-header" onclick="toggleAccordion(3)">
             <div class="upi-div">
 
-                <div> UPI</div>
+                <div><strong>UPI</strong> </div>
                 <div>       <img src="./card-schemes.webp"  height="20px" alt=""></div>
             </div>
    
@@ -604,12 +216,12 @@ cursor: pointer;
       </div>
       <div class="accordion">
         <label class="accordion-header" onclick="toggleAccordion(4)">
-         <div>Wallets</div> 
+         <div><strong>Wallets</strong></div> 
         </label>
         <div class="accordion-content" id="accordion-content-4" style="display: none;">
           <h2>Pay with your favorite method</h2>
           <div>
-            <img src="./Paytm_logo.png" height="25px" alt="Image 1">
+            <img src="./Paytm_logo.png" height="25px" alt="Image 1">  &nbsp;   &nbsp; &nbsp;
 
             <img src="./Paytm_logo.png" height="25px" alt="Image 2">
           </div>
@@ -624,7 +236,7 @@ cursor: pointer;
             </select>
          
           </div>
-          <button class="pay-btn">Pay</button>
+          <button class="payment-btn">Pay</button>
         </div>
       </div>
 
@@ -632,7 +244,7 @@ cursor: pointer;
 
       <div class="accordion">
         <label class="accordion-header" onclick="toggleAccordion(5)">
-         <div>NEFT/IMPS/RTGS - 100% Secure Direct transfer to our bank account. </div> 
+         <div> <strong>NEFT/IMPS/RTGS - 100% Secure Direct transfer to our bank account.</strong> </div> 
         </label>
         <div class="accordion-content" id="accordion-content-5" style="display: none;">
           <h2>Account Details</h2>
@@ -682,7 +294,7 @@ cursor: pointer;
             
         </div>
         <div class="inner-sectionx2">
-            <p> <i class="fa-solid fa-shield-halved" style="color: green;"></i> <strong>100% Secure Payments</strong> </p>
+            <p> <i class="fa-solid fa-shield-halved" style="color: green;"></i> <strong >100% Secure Payments</strong> </p>
            <div> <img src="./card-schemes.webp" height="40px"  width="100%"></div>
         </div>
       </div>  

@@ -1,0 +1,111 @@
+@media screen and (max-width: 768px) {
+    body{
+      padding: 0;
+    }
+    .outer-container {
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    .inner-section1 {
+      width: 100%;
+    }
+
+    .card {
+      width: 100%;
+    }
+
+
+
+    .div {
+        padding: 0 30px;
+    }
+
+
+    .accordion {
+        width: 90%;
+        margin: 10px auto;
+        
+    }
+
+
+    #expiryDate {
+        margin: 0;
+    }
+  
+
+    .inner-sectionx2 {
+      padding: 10px;
+      padding-top: 20px;
+      font-size: 13px;   
+    }
+
+
+    .inner-section2 {
+      width: 100%;
+    }
+
+    .inner-section{
+      padding: 0;
+    }
+
+
+    .outer-sectionx2 {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+
+
+   
+
+  }
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+
+  }
+
+
+
+
+  @media screen and (max-width: 450px) {
+    
+    .bottom-div img{
+        height: 30px;
+      }
+  
+      #accordion-content-2 img{
+      height: 40px;
+      }
+
+      .cardd input{
+        width: 85%;
+      }
+
+
+      .div-above-innersection2 {
+        font-size: 12px;
+      }
+  
+  }
+
+
+
+  @media screen and (max-width: 400px) {
+    
+    .div-above-innersection2 {
+        font-size: 10px;
+      }
+  }
+
+
+
+
+  @media screen and (max-width: 360px) {
+    
+  }
