@@ -1,6 +1,24 @@
+
+@media screen and (max-width: 1080px) {
+  #expiryDate {
+    margin: 0;
+    margin-left: 0;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  #expiryDate {
+    margin: 0;
+    margin-left: 0;
+}
+
+}
+
+
 @media screen and (max-width: 768px) {
     body{
       padding: 0;
+      margin:0;
     }
     .outer-container {
       flex-direction: column;
@@ -13,8 +31,14 @@
 
     .card {
       width: 100%;
+      min-height: 150px;
+   
     }
 
+
+    .card ul {
+      padding-left: 30px;
+    }
 
 
     .div {
@@ -31,13 +55,14 @@
 
     #expiryDate {
         margin: 0;
+        margin-left: 1.4rem;
     }
   
 
     .inner-sectionx2 {
       padding: 10px;
       padding-top: 20px;
-      font-size: 13px;   
+      font-size: 16px;   
     }
 
 
@@ -56,6 +81,9 @@
     }
 
 
+    .bottom-div img {
+      height: 35px;
+  }
 
    
 
@@ -66,8 +94,21 @@
 
 
 
+  @media screen and (max-width: 688px) {
+    #expiryDate {
+      /* margin: 0; */
+      margin-left:0;
+  }
+  }
+
+
+
   @media screen and (max-width: 600px) {
 
+    #expiryDate {
+      /* margin: 0; */
+      margin-left:0;
+  }
   }
 
 
@@ -90,6 +131,7 @@
 
       .div-above-innersection2 {
         font-size: 12px;
+        padding: 12px;
       }
   
   }
