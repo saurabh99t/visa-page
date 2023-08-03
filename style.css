@@ -81,8 +81,11 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242, 242, 242, 0.
 
   .card1{
     text-align: center;
+ 
 
   }
+
+
 
 
   .cardd input {
@@ -412,6 +415,7 @@ cursor: pointer;
       width: fit-content;
       padding-top:10px;
       font-weight: 500;
+      font-size: 15px;
     }
 
     
@@ -425,17 +429,21 @@ cursor: pointer;
 
     #card1-p3 {
       margin: 0;
+      margin-bottom: 10px;
+      color: rgb(39, 39, 39);
     }
+
 
 
 
     #card1-p2 {
       margin: 0;
+            color: rgb(39, 39, 39);
     }
 
     .card1-p1 
     {
-      font-size: 25px;
+      font-size: 20px;
       color: rgb(39, 39, 39);
       font-weight: 500;
            border-bottom: 2px solid rgba(255, 166, 0, 0.548);
@@ -462,6 +470,10 @@ cursor: pointer;
     #card1-a1{
      text-decoration: none;
 
+
+
+     color: darkblue;
+     font-weight: 500;
       
     } 
 
