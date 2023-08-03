@@ -63,7 +63,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242, 242, 242, 0.
 
   .card li {
     list-style: none;
-    color: rgb(44, 44, 44);
+    color: rgb(69, 69, 69);
   }
 
   .card ul {
@@ -75,6 +75,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242, 242, 242, 0.
     /* text-align: center; */
     margin: 0 auto;
     padding-bottom: 5px;
+    color: rgb(39, 39, 39);
   }
 
 
@@ -132,9 +133,15 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242, 242, 242, 0.
     display: flex;
     justify-content: space-between;
     line-height: 10px;
-    color: rgb(44, 44, 44);
+    color: rgb(69, 69, 69);
     padding-top: 10px;
 
+  }
+
+
+  .div p{
+    font-weight: 500;
+    color: rgb(69, 69, 69);
   }
 
 
@@ -396,7 +403,7 @@ cursor: pointer;
 
     .card h2{
       text-decoration: dashed;
-      border-bottom: 2px solid rgba(255, 166, 0, 0.646) ;
+      border-bottom: 2px solid rgba(255, 166, 0, 0.548);
       width: fit-content;
       padding-top:10px;
       font-weight: 500;
@@ -416,12 +423,25 @@ cursor: pointer;
     }
 
 
-    #card1-p1 
+
+    #card1-p2 {
+      margin: 0;
+    }
+
+    .card1-p1 
     {
       font-size: 25px;
-
+      color: rgb(39, 39, 39);
       font-weight: 500;
+           border-bottom: 2px solid rgba(255, 166, 0, 0.548);
+      padding: 2px;
+      width: fit-content;
+      margin: 0  auto; 
+      margin-top: 20px;
+      margin-bottom: 20px;
+
     }
+
 
     #card1-p1 i{
       font-size: 25px;
