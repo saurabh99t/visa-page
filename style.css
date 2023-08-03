@@ -42,7 +42,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242, 242, 242, 0.
     /* background-color: #ff0000; */
     /* border: 1px solid #cccccc; */
     /* border-radius: 4px; */
-    padding: 10px;
+    padding:  10px 0 10px 10px;
     margin-bottom: 10px;
     border-bottom:  1px solid rgba(0, 0, 0, 0.137);
     width: 80%;
