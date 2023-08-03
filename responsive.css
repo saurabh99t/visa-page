@@ -133,6 +133,10 @@
         font-size: 12px;
         padding: 12px;
       }
+
+      .inner-sectionx2 p {
+        padding-top: 0;
+      }
   
   }
 
