@@ -370,7 +370,19 @@ cursor: pointer;
     .card {
       line-height: 20px;
     }
+
+
+    .card h2{
+      text-decoration: dashed;
+      border-bottom: 2px solid rgba(255, 166, 0, 0.646) ;
+      width: fit-content;
+    }
     
+
+    .card i {
+      color: orange;
+      font-size: 15px;
+    }
 
 
     #card1-p1 
