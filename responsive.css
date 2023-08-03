@@ -76,11 +76,11 @@
   @media screen and (max-width: 450px) {
     
     .bottom-div img{
-        height: 30px;
+        height: 25px;
       }
   
       #accordion-content-2 img{
-      height: 40px;
+      height: 35px;
       }
 
       .cardd input{
